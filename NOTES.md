@@ -4,6 +4,7 @@ step 1: Integrate basic theme to Asset Pipeline
 
 step 2: Allow people to CRUD lists 
 
+(video left off at 18:28 mark)
 
 - see all their lists
 - create a list
