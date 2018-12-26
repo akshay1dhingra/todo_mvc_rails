@@ -4,9 +4,14 @@ step 1: Integrate basic theme to Asset Pipeline
 
 step 2: Allow people to CRUD lists 
 
-(video left off at 18:28 mark)
+[] ListsController
+    #index    
+    - see all their lists
+    - doubling as my #new action in that it is presenting the person
+    with a form to create a new list
+    / - Index all of the lists... 
+        I know I need a model and a controller... so generate a Resource
 
-- see all their lists
 - create a list
 - show a list
 - delete a list
