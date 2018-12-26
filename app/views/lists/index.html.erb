@@ -6,21 +6,13 @@
             
 	<section class="main">
         <ul class="todo-list">
-            <li>
-                <div class="view">                   
-                    <label><a href="#">Shopping List</a></label>            
-                </div>  
-            </li>
-            <li>
-                <div class="view">                   
-                    <label><a href="#">Gift List</a></label>            
-                </div>  
-            </li> 
-            <li>
-                <div class="view">                   
-                    <label><a href="#">Reading List</a></label>            
-                </div>  
-            </li>
+            <% @lists.each do |list| %>
+                <li>
+                    <div class="view">                   
+                        <label><a href="#">Reading List</a></label>            
+                    </div>  
+                </li>
+            <% end %>
         </ul>
     </section>
             
