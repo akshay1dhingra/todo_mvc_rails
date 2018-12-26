@@ -1,5 +1,7 @@
 step 1: Integrate basic theme to Asset Pipeline
 
+- I want to go to the homepage ( / ) and see a stubbed out, non-dynamic, page with the theme.
+
 step 2: Allow people to CRUD lists 
 
 - create a list
