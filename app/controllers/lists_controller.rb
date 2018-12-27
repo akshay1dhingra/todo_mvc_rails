@@ -10,4 +10,9 @@ class ListsController < ApplicationController
         @list = List.find(params[:id])
     end 
 
+    def create 
+        raise params.inspect
+        # @list = List.create(name: params[:name])
+    end 
+
 end
