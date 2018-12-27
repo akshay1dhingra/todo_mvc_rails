@@ -35,6 +35,11 @@ items
 
 [x] Step 3: Add items to a list
 
-Step 4: Adding validations
+[x] Step 4: Adding validations
     validates that lists have names
     validates that items have a description
+
+Step 5: I want to add state (complete, incomplete) to Items in a list
+    - Marking items as complete or incomplete 
+    
+Step 6: Deleting items from a list
