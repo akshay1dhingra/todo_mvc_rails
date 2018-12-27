@@ -13,6 +13,15 @@ step 2: Allow people to CRUD lists
         I know I need a model and a controller... so generate a Resource
 
 - create a list
+
+CREATE ACTION for an ITEM in a LIST - what is the URL / HTTP method for that?
+
+POST /lists/:id/items #=> Doesn't describe which list we are adding an item too? 
+
+An item doesnt exist in our application outside of the context of the list it belongs to
+
+Nested Resource - Items are nested in terms of URLs under their parent list
+
 - show a list
 - delete a list
 
@@ -26,4 +35,3 @@ items
 
 Step 3: Add items to a list
 
-18:36 
