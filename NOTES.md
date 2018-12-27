@@ -33,5 +33,8 @@ lists
 items
     belongs to a list
 
-Step 3: Add items to a list
+[x] Step 3: Add items to a list
 
+Step 4: Adding validations
+    validates that lists have names
+    validates that items have a description
