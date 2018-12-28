@@ -12,10 +12,11 @@ class ItemsController < ApplicationController
 
   # PATCH - /lists/:list_id/items/:id
   def update
-    @item = Item.find(params[:id])
-    @item.update(item_params)
+    raise params.inspect
+    # @item = Item.find(params[:id])
+    # @item.update(item_params)
 
-    redirect_to list_path(@item.list)
+    # redirect_to list_path(@item.list)
   end
 
   private
