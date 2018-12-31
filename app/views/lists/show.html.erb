@@ -10,7 +10,7 @@
     <input class="toggle-all" type="checkbox">
     <label for="toggle-all">Mark all as complete</label>
     <ul class="todo-list">
-    <% render :collection => @list.items, :partial => "items/item_li", :as => :item %>
+    <%= render :collection => @list.items, :partial => "items/item_li", :as => :item %>
     </ul>
   </section>
   <footer class="footer">
