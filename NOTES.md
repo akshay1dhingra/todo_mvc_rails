@@ -41,5 +41,7 @@ items
 
 Step 5: I want to add state (complete, incomplete) to Items in a list
     - Marking items as complete or incomplete 
+
+REFACTOR LIST SHOW VIEW
     
 Step 6: Deleting items from a list
