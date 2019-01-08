@@ -4,14 +4,20 @@ class SessionsController < ApplicationController
     end 
 
     def create
-        # raise params.inspect
-        user = User.find_by(:email => params[:email])
-        if user && user.authenticate(params[:password])
-            session[:user_id] = user.id 
-            redirect_to root_path
+        if auth_hash = request.env["omniauth.auth"]
+           user = User.find_or_create_by_omniauth(auth_hash)
+           session[:user_id] = user.id 
+           redirect_to root_path
         else
-            flash[:alert] = "No email found"
-            render 'sessions/new' 
+            # Normal login
+            user = User.find_by(:email => params[:email])
+            if user && user.authenticate(params[:password])
+                session[:user_id] = user.id 
+                redirect_to root_path
+            else
+                flash[:alert] = "No email found"
+                render 'sessions/new' 
+            end
         end
     end 
 
