@@ -6,8 +6,13 @@ class SessionsController < ApplicationController
     def create
         # raise params.inspect
         user = User.find_by(:email => params[:email])
-        session[:user_id] = user.id 
-        redirect_to root_path
+        if user && user.authenticate(params[:password])
+            session[:user_id] = user.id 
+            redirect_to root_path
+        else
+            flash[:alert] = "No email found"
+            render 'sessions/new' 
+        end
     end 
 
     def destroy 
