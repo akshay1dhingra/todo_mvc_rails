@@ -8,6 +8,6 @@ To Do List app built with Ruby on Rails and Javascript
 
 3. run `bundle install`
 
-4. run `rails s`
+4. run `rails s` (or 'thin start --ssl')
 
 5. Open your browser and go to localhost:3000
